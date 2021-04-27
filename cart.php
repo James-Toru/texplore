@@ -144,7 +144,8 @@
 			<div class="bottom">
 			  <center>
 				<span class="credit">Created By <a href="#">Texplore</a> | </span>
-				<span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+				<span class="far fa-copyright"></span><span> 2021 All rights reserve |</span>
+				<span class="credit"> <a href="landing.html">Logout</a></span>
 			  </center>
 			</div>
 		  </footer>
