@@ -1,0 +1,149 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior:smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+.btn{
+    display: inline-block;
+    border: 2px solid #fff;
+    color: white;
+    background: transparent;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.btn:hover{
+    background: #fff;
+    color: #494964;
+}
+/*Video section*/
+.vid-showcase{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #111;
+    z-index: 2;
+}
+.vid-showcase header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    z-index: 1000;
+}
+.logo{
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.vid-showcase video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    mix-blend-mode: overlay;
+}
+.text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+.text h2{
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.text h3{
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.text p{
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    font-weight: 200;
+}
+.landing-buttons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 100px;
+}
+.landing-buttons a{
+    padding: 20px 100px;
+}
+.social{
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social li{
+    list-style: none;
+}
+.social li a{
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+.social li a:hover{
+    transform: scale(0.5) translateY(-15px);
+}
+.social .fab{
+    color: #fff;
+    font-size: 35px;
+}
+@media(max-width:600px){
+    .vid-showcase{
+        justify-content: space-between;
+    }
+    .text h2{
+        font-size: 2em;
+    }
+    .text h3{
+        font-size: 1em;
+    }
+    .landing-buttons{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
